@@ -29,10 +29,34 @@
 - The input function implicitly uses sys.stdin to get user input from the keyboard
 - Function print implicitly outputs to sys.stdout, which appears in the command line
 - Python implicitly outputs program errors and tracebacks to sys.stderr, which also appears in the command line
-- Import the sys module if you need to refer to these objects explicitly in your code—this is rare-
-#File-open modes
+- Import the sys module if you need to refer to these objects explicitly in your code—this is rare.
+# File-open modes
 - 'r' ==> Open for reading; default mode when you don't specify any more
 - 'w' ==> Open a text file for writing; existing file contents are deleted
 - 'a' ==> Open a text file for creating or append to existing file
 - 'w+' ==> Open a file for reading and writing. existing file contents are deleted
 - 'a+' ==> Open for reading and appending
+# File Object Methods
+## read
+- For a text file, returns a string containing the number of characters specified by the method’s integer argument
+- For a binary file, returns the specified number of bytes
+- If no argument is specified, the method returns the entire contents of the file
+## readline
+- Returns one line of text as a string, including the newline character if there is one
+- Returns an empty string when it encounters the end of the file
+## writelines
+- Receives a list of strings and writes its contents to a file
+## json format
+- JSON (JavaScript Object Notation) is a text-based, human-and-computer-readable, data-interchange format used to represent objects as collections of name–value pairs.
+- Preferred data format for transmitting objects across platforms.
+- Similar to Python dictionaries
+- Each JSON object contains a comma-separated list of property names and values, in curly braces.
+- JSON arrays, like Python lists, are comma-separated values in square brackets.
+- Copy the contents on right and create a text file (named example.json) on your computer - in the same folder as your script.
+## Deserializing the JSON Text
+- json module’s load function reads entire JSON contents of its file object argument and converts the JSON into a Python object
+- Known as deserializing the data
+- json module’s dumps function (dumps is short for “dump string”) returns a Python string representation of an object in JSON format
+- Can be used to display JSON in a nicely indented format (sometimes called “pretty printing”)
+- When call includes the indent keyword argument, the string contains newline characters and indentation for pretty printing.  Also can use indent with the dump function when writing to a file
+- 
