@@ -59,4 +59,14 @@
 - json module’s dumps function (dumps is short for “dump string”) returns a Python string representation of an object in JSON format
 - Can be used to display JSON in a nicely indented format (sometimes called “pretty printing”)
 - When call includes the indent keyword argument, the string contains newline characters and indentation for pretty printing.  Also can use indent with the dump function when writing to a file
-- 
+## csv module
+- csv module provides functions for working with CSV files
+- csv module’s documentation recommends opening CSV files with the additional keyword argument newline='' to ensure that newlines are processed properly
+- .csv file extension indicates a CSV-format file
+- writer function returns an object that writes CSV data to the specified file object
+- writer’s writerow method receives an iterable to store in the file
+- By default, writerow delimits values with commas, but you can specify custom delimiters
+## Reading from a CSV File
+- Read records from the file accounts.csv and display the contents of each record
+- csv module’s reader function returns an object that reads CSV-format data from the specified file object
+- Can iterate through the reader object one record of comma-delimited values at a time
