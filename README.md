@@ -30,4 +30,9 @@
 - Function print implicitly outputs to sys.stdout, which appears in the command line
 - Python implicitly outputs program errors and tracebacks to sys.stderr, which also appears in the command line
 - Import the sys module if you need to refer to these objects explicitly in your code—this is rare-
-- 
+#File-open modes
+- 'r' ==> Open for reading; default mode when you don't specify any more
+- 'w' ==> Open a text file for writing; existing file contents are deleted
+- 'a' ==> Open a text file for creating or append to existing file
+- 'w+' ==> Open a file for reading and writing. existing file contents are deleted
+- 'a+' ==> Open for reading and appending
